@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    //problem set 5 ..problem 1
+    //Write a C program that finds the maximum element of the input 2D array.
+    int i,j,N,M,max=-99999;
+    printf("enter collam and row\n");
+    scanf("%d%d",&N,&M);
+    int a[N][M];
+    for(i=0; i<N; i++)
+    {
+        for(j=0; j<M; j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0; i<N; i++)
+    {
+        for(j=0; j<M; j++)
+        {
+            if(max<a[i][j])
+            {
+                max=a[i][j];
+            }
+        }
+    }
+    printf("max=%d",max);
+    return 0;
+}
