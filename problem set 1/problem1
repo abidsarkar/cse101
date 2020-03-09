@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int num1, deno1, num2, deno2;
+    printf("enter 1st function:");
+    scanf("%d/%d", &num1, &deno2);
+    printf("entr 2nd function:");
+    scanf("%d/%d", &num2, &deno2);
+    int sum_num, sum_deno;
+    sum_num = num1 * deno2 + num2 * deno1 ;
+    sum_deno = deno1 * deno2;
+    printf("the sum is:%d/%d", sum_num, sum_deno);
+
+    return 0;
+}
