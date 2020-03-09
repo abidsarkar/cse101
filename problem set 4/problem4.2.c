@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+int main()
+{
+    int N,i;
+    int sum=0;
+    printf("input array size=");
+    scanf("%d", &N);
+    int a[N];
+    printf("number: ");
+    for(i=0; i<N; i++){
+        scanf("%d", &a[i]);
+       }
+     printf("input=");
+
+    for(i=0; i<N; i++)
+        {
+        if(a[i]%2==0)
+        {
+            a[i]+=2;
+        printf("%d ", a[i]);
+        }
+        else if(a[i]%2!=0){
+            a[i]+=3;
+            printf("%d ", a[i]);
+        }
+        }
+
+    return 0;
+}
